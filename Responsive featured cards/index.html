@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Featured Cards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 10px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 200px;
+            background-color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ffffff;
+            border-radius: 30px;
+            text-align: center ;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+                flex-direction: row;
+            }
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: auto;
+            margin-top: 30px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+  <h1 style="color:blue; text-align:center;">Coding Challenge/ Responsive Featured Cards</h1>
+    <div class="container">
+        <div class="column">
+          <img src="https://i.ebayimg.com/images/g/7RwAAOSwIw9kXEQK/s-l1200.jpg" alt="Wireless Earbuds" style="width:200px; height:auto; margin-bottom: 15px;">
+          <h2>Smart Watch</h2>
+          <p>Track your health and stay connected with ease.</p>
+        <a href="#" class="button">Learn More</a>
+        </div>
+
+        <div class="column">
+          <img src="https://treblab.com/cdn/shop/files/X3-Pro-B_black.jpg?v=1721080213&width=1946" alt="Wireless Earbuds" style="width:200px; height:auto; margin-bottom: 15px;">
+          <h2>Wireless Earbuds</h2>
+          <p>Experience crisp audio noise cancellation.</p>
+          <a href="#" class="button">Learn More</a>
+        </div>
+        
+        <div class="column">
+          <img src="https://m.media-amazon.com/images/I/61V5FRUgX8L._UF894,1000_QL80_.jpg" alt="Smart Speaker" style="width:200px; height:auto; margin-bottom: 15px;">
+          <h2>Smart Speaker</h2>
+          <p>Control your home with voice-activated AI.</p>
+          <a href="#" class="button">Learn More</a>
+        </div>
+
+      </div>
+</body>
+</html>

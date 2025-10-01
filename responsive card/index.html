@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;  
+    }
+    .card {
+        width: 80%;}
+}
+
+
+.card:hover{
+    background-color:rgba(0,255,0,0.2);
+    border: #000000;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;   
+    
+     
+}
+
+h3{color:green}
+
+.bottom {
+    border: 1px solid green;
+    border-radius: 10%;
+    padding: 10px;
+    font-size:15px;
+    cursor: pointer;
+    width: 100px;
+    margin: 20px auto;
+    color: #f4f4f4;
+    background-color: rgb(20, 150, 20);
+    text-align: center;
+}
+
+.container div{ border: 1px solid green;}
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Basic</h2>
+            <h3>&dollar; 9/mo</h3>
+           <p>&check;Feature A</p>
+           <p>&check;Feature B</p>
+           <p>&check;Feature C</p>
+           <div class="bottom">
+            <P>Sign Up</P>
+           </div>
+        </div>
+        <div class="card">
+            <h2>Pro</h2>
+            <h3>&dollar; 19/mo</h3>
+           <p>&check; Feature A</p>
+           <p>&check; Feature B</p>
+           <p>&check; Feature C</p> 
+           <div class="bottom">
+            <P>Sign Up</P>
+        </div>
+        </div>
+        <div class="card">
+            <h2>Premuim</h2>
+            <h3>&dollar; 29/mo</h3>
+            <p>&check;Feature A</p>
+            <p>&check;Feature B</p>
+            <p>&check;Feature C</p>
+            <div class="bottom">
+            <P>Sign Up</P>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
