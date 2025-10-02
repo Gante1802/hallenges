@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning</title>
+  <style>
+    
+    .split-container{
+      display: flex;
+      height: 100vh;
+    }
+
+    .left, .right{
+      flex: 1;
+      padding: 5px;
+      margin-top: 150px;
+    }
+
+    .left{text-align: left;}
+    .right{text-align: right;}
+
+    .divider{
+      width: 2px;
+      background-color: black;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="split-container">
+    <div class="left">
+      <h1>Left Side</h1>
+      
+    </div>
+    <div class="divider"></div>
+    <div class="right">
+      <h1>Right Side</h1>
+      
+    </div>
+  </div>
+  
+</body>
+</html>
