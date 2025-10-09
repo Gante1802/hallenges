@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Intermediate layout</title>
+    <style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+}
+
+/*Header Styles*/
+        header {
+            background-color: #282b32;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 2px;
+            border:1px solid black;           
+        }
+        .header-buttons {
+            margin-top: 15px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 50px;
+            position: relative;
+            margin-right: 5px;
+        }
+        .header-buttons button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .header-buttons button:hover {
+            background-color: #777;
+        }
+        .header-left {
+           margin: 32px auto 0 16px;
+           top: 16px;
+           position: absolute;
+           font-size: 30px;
+           font-weight: bold;
+           
+        }
+/*End Header Styles*/
+
+/* Content Styles */
+
+.h2 {
+    margin: 20px ;
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.content {
+    background-color: #ffffff;
+    
+}
+
+.content-items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+aside {
+    background-color: #f4f4f4;
+    padding: 40px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 100vh;
+
+    line-height: 2;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+}
+
+/* End Content Styles */
+
+/*footer styles*/
+
+
+/* End footer styles */
+
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.5) 0px -2px 10px 0px;
+        }
+        .footer-bottom{
+            text-align: center;
+            margin-top: 10px;
+            color: #bbb;
+            flex: 1;
+            align-self: self-end;
+        }
+        .footer-p {
+            font-size: 10px;
+        }
+
+        .footer-bottom p{
+            font-size: 15px;
+        }
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    .content-items {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+        height: auto;
+        margin: 20px 0 0 0;
+    }
+}
+/* End Responsive Design */
+      
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- Header -->
+    <header>
+        <h3 class="header-left">MySite</h3>
+        <div class="header-buttons">
+            <button>Home</button>
+            <button>About</button>
+            <button>Contact</button>
+        </div>        
+    </header>
+<!-- End Header -->
+
+<!-- Content -->
+<div class="content">
+<h2 class="h2">Welcome to MySite</h2>
+
+<div class="content-items">
+<p>This is an example layout challenge 
+.The goal is to practice positioning , responsive design ,
+ and fixed elements like footer
+<br>
+<br>
+Add more text here to simulate a real article. 
+The footer should stay at the bottom wherether the page is full or short.
+</p>
+
+<aside>
+    <h3>Sidebar</h3>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</aside>
+</div>
+</div>
+<!-- End Content -->
+
+<!-- Footer -->
+ <div class="footer-container">
+  <footer>   
+   <div class="footer-bottom">
+    <p class="footer-p">&copy; 2025 MyWebpage. All rights reserved.</p>
+   </div>    
+  </footer>
+</div>
+ <!--End Footer-->
+</div>
+
+
+</body>
+</html>
