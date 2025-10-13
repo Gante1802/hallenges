@@ -3,9 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Scrolling Options</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(27, 27, 27);
+}
+
+/*container and items styling*/
+.container {
+  background-color: rgb(39, 39, 39);
+  color: rgb(234, 234, 234);
+  margin: 24px;
+  padding: 24px;
+  border-radius: 18px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 32px;
+  margin-top: 32px;
+}
+
+.scroll-item {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  gap: 12px;
+  width: 50%;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgb(50, 50, 50);
+  padding: 12px;
+}
+
+.scroll-item img {
+  border-radius: 50%;
+}
+
+.user {
+  color: #e3e3e3a3;
+}
+/*button styling*/
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(0, 90, 190);
+}
+
+</style>
 </head>
 <body>
-  
+  <!-- Main container -->
+  <div class="container">
+    <h2>People to Follow</h2>
+    <br>
+    <p>Scroll horizontally to discover creators and developers</p>
+<!-- Scrollable container -->
+   <div class="scroll-container">
+ <!-- Scrollable items-->
+      <div class="scroll-item">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Dwayne Richard">
+        <p class="user">@dwaynerichard</p>
+        <p>Dwayne Richard</p>
+        <form>
+          <button>Follow</button>
+        </form>
+      </div>
+
+      <div class="scroll-item">
+        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="John Doe">
+        <p class="user">@johndoe</p>
+        <p>John Doe</p>
+        <form>
+          <button>Follow</button>
+        </form>
+      </div>
+
+      <div class="scroll-item">
+        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jane Smith">
+        <p class="user">@janesmith</p>
+        <p>Jane Smith</p>
+        <form>
+          <button>Follow</button>
+        </form>
+      </div>
+
+      <div class="scroll-item">
+        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Alice Johnson">
+        <p class="user">@alicejohnson</p>
+        <p>Alice Johnson</p>
+        <form>
+          <button>Follow</button>
+        </form>
+      </div>
+
+      <div class="scroll-item">
+        <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Michael Brown">
+        <p class="user">@michaelbrown</p>
+        <p>Michael Brown</p>
+        <form>
+          <button>Follow</button>
+        </form>
+      </div>
+
+      <div class="scroll-item">
+        <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Emily Davis">
+        <p class="user">@emilydavis</p>
+        <p>Emily Davis</p>
+        <form>
+          <button>Follow</button>
+        </form>
+      </div>
+
+      <div class="scroll-item">
+        <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="Chris Wilson">
+        <p class="user">@chriswilson</p>
+        <p>Chris Wilson</p>
+        <form>
+          <button>Follow</button>
+        </form>
+      </div>
+
+
+
+   </div>
+  </div>   
 </body>
 </html>
